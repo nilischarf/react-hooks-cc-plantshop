@@ -7,12 +7,6 @@
       "price": 15.99
     },
     {
-      "id": 2,
-      "name": "ZZ Plant",
-      "image": "./images/zz-plant.jpg",
-      "price": 25.98
-    },
-    {
       "id": 3,
       "name": "Pilea peperomioides",
       "image": "./images/pilea.jpg",
@@ -41,6 +35,12 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Tulip",
+      "image": "https://westmountflorist.com/cdn/shop/articles/tulips-4322635_1920_-2.jpg?v=1726171898&width=2048",
+      "price": "10.25",
+      "id": 8
     }
   ]
 }
