@@ -33,7 +33,7 @@ function PlantCard({ plant, onUpdatePlant, onDeletePlant }) {
       <img src={plant.image} alt={plant.name}/>
       <h4>{plant.name}</h4>
       <p>
-        Price: $<input type="number" value={price} onChange={handleUpdatePrice} step="0.01"/> 
+        Price: <input type="number" value={price} onChange={handleUpdatePrice} step="0.01"/> 
       </p>
       <button 
         className={isSoldOut ? "" : "primary"}

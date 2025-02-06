@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import PlantCard from "./PlantCard";
 
-function PlantList({ plants }) {
-  const [plantList, setPlantList] = useState(plants)
-
-function handleDeletePlant(id) {
-  setPlantList(plantList.filter((plant) => plant.id !== id))
-}
-
+function PlantList({ plants, onDeletePlant, onUpdatePlant }) {
   return (
     <ul className="cards">
-      {plantList.map((plant) => (
-        <PlantCard key={plant.id} plant={plant} onDeletePlant={handleDeletePlant} /> 
+      {plants.map((plant) => (
+        <PlantCard 
+          key={plant.id} 
+          plant={plant} 
+          onDeletePlant={onDeletePlant} 
+          onUpdatePlant={onUpdatePlant}
+        /> 
       ))}
     </ul>
   );
